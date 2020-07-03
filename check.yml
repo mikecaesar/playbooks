@@ -1,0 +1,13 @@
+---
+- hosts: all
+  tasks:
+
+  - name: ping
+    ping:
+
+  - name: Check ID
+    command: id
+
+  - name: Check ID Become
+    command: id
+    become: true
